@@ -1,0 +1,59 @@
+
+
+/* LIGHT */
+html {
+  background: #f4f6f9;
+  color: #111827;
+}
+
+/* DARK */
+html[data-theme="dark"] {
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+/* BODY */
+body {
+  background: inherit !important;
+  color: inherit !important;
+}
+
+/* FORCE ALL MAJOR ELEMENTS */
+.navbar,
+.container,
+.card,
+.job-card,
+.job-box,
+footer {
+  background: inherit !important;
+  color: inherit !important;
+}
+
+/* TEXT */
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+small {
+  color: inherit !important;
+}
+
+/* LINKS */
+a {
+  color: #0d6efd;
+}
+
+html[data-theme="dark"] a {
+  color: #58a6ff;
+}
+
+/* BUTTON FIX */
+.btn-outline-secondary {
+  color: inherit;
+  border-color: currentColor;
+}

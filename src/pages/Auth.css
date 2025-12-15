@@ -1,0 +1,112 @@
+
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e0e7ff, #f8fafc);
+  padding: 20px;
+}
+
+/* DARK MODE BACKGROUND */
+html[data-theme="dark"] .auth-wrapper {
+  background: radial-gradient(circle at top, #0d1117, #010409);
+}
+
+/* CARD */
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+  animation: slideUp 0.8s ease forwards;
+}
+
+/* DARK CARD */
+html[data-theme="dark"] .auth-card {
+  background: #0b1220;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8);
+}
+
+/* TITLE */
+.auth-card h3 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #111827;
+}
+
+html[data-theme="dark"] .auth-card h3 {
+  color: #f0f6fc;
+}
+
+/* INPUTS */
+.auth-card input {
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  padding: 0 14px;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.auth-card input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
+}
+
+/* DARK INPUTS */
+html[data-theme="dark"] .auth-card input {
+  background: #020617;
+  border-color: #1f2937;
+  color: #e6edf3;
+}
+
+/* BUTTON */
+.auth-btn {
+  height: 48px;
+  border-radius: 14px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  border: none;
+  color: #ffffff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.auth-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(79, 70, 229, 0.45);
+}
+
+/* FOOTER TEXT */
+.auth-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+html[data-theme="dark"] .auth-footer {
+  color: #9aa4b2;
+}
+
+.auth-footer a {
+  color: #6366f1;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* ENTRY ANIMATION */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
