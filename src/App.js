@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 
 import Home from "./pages/Home";
@@ -12,20 +12,28 @@ import Navbar from "./components/Navbar";
 import ProtectedRoute from "./routes/ProtectedRoute";
 
 function App() {
-  // apply saved theme
   useEffect(() => {
     const theme = localStorage.getItem("theme") || "light";
     document.documentElement.setAttribute("data-theme", theme);
   }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
-
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
 
-        {/* 🔐 JOBS – LOGIN REQUIRED */}
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+
         <Route
           path="/jobs"
           element={
@@ -43,22 +51,8 @@ function App() {
             </ProtectedRoute>
           }
         />
-
-        {/* AUTH */}
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-
-        {/* DASHBOARD */}
-        <Route
-          path="/dashboard"
-          element={
-            <ProtectedRoute>
-              <Dashboard />
-            </ProtectedRoute>
-          }
-        />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
