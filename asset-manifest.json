@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/jobconnect-frontend/static/css/main.4e426b0e.css",
-    "main.js": "/jobconnect-frontend/static/js/main.c0f715fd.js",
-    "index.html": "/jobconnect-frontend/index.html",
-    "main.4e426b0e.css.map": "/jobconnect-frontend/static/css/main.4e426b0e.css.map",
-    "main.c0f715fd.js.map": "/jobconnect-frontend/static/js/main.c0f715fd.js.map"
+    "main.css": "/Jobconnect-frontend/static/css/main.4e426b0e.css",
+    "main.js": "/Jobconnect-frontend/static/js/main.c0f715fd.js",
+    "index.html": "/Jobconnect-frontend/index.html",
+    "main.4e426b0e.css.map": "/Jobconnect-frontend/static/css/main.4e426b0e.css.map",
+    "main.c0f715fd.js.map": "/Jobconnect-frontend/static/js/main.c0f715fd.js.map"
   },
   "entrypoints": [
     "static/css/main.4e426b0e.css",
