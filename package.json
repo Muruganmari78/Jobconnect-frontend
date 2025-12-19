@@ -8,7 +8,7 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.8",
-    "homepage": "https://github.com/Muruganmari78/jobconnect-frontend.git",
+    "homepage": "https://muruganmari78.github.io/jobconnect-frontend",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-router-dom": "^7.10.1",
